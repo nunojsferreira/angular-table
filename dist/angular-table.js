@@ -627,7 +627,7 @@
           if (!attribute) {
             throw "at-implicit specified without at-attribute: " + (element.html());
           }
-          return element.append("{{item." + attribute + "}}");
+          return element.append("{[{item." + attribute + "}]}");
         }
       };
     }
